@@ -97,7 +97,7 @@ article{
     margin: 30px;
     float: left;
     background-color: aliceblue;
-    border-image-source: url("../img/movil.png"); /*Terminar de ponerlo bien 
+    border-image-source: url("../img/movil.png"); /*Terminar de ponerlo bien*/ 
     border-image-slice: 1900;
 }
 article img[src*="javascript.png"]{ /*Con este atributo seleccionamos todos las 
