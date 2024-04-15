@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+}
+
+.menu-enlace{
+    text-decoration: none;
+    color: black;
+}
+.menu-enlace:hover{
+    color: red;
+}
+
+ul{
+    position: relative;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 20px 0px 20px 0px;
+    margin: 0px 80px 0px 80px;
+} /*Voy por el punto 3*/
+
