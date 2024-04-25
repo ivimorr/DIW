@@ -104,8 +104,8 @@ content{
     display: flex; /*Ponemos display flex y no table ni no el contenido del content se mesdeplazara creando columnas con los moviles*/
 }
 
-#article1{
-    width: 960px;
+video{
+    width: 760px;
     height: 500px;
     border: 8px grey solid;
     text-align: center;
@@ -116,28 +116,36 @@ content{
     float: left;
     background-color: #ffffff;
     position: relative;
+    border-radius: 6px;
 }
-#barra{ /*Barra para simular la parte inferior del recuadro*/
-    width: 700px;
-    height: 0px;
-    padding: 0px;
-    border: 4px  grey solid; 
-    position: absolute;
-    bottom: 20px;
-}
+
+
 
 #article2{
     width: 260px;
     height: 500px;
-    border: 2px black solid;
     text-align: center;
-    line-height: 1.8em; /*Esta propiedad controla la altura de línea en un bloque de texto*/
+    line-height: 1.8em; 
     padding: 5px 5px 22px 5px ;
     margin: 30px 30px 30px 10px;
     float: left;
     background-color: #ffffff;
 }
 
+button{
+    margin:5px 0px 5px 0px ;
+    height:40px;
+    width: 100px;
+    color: white;
+    background-color:  #ea5b3c;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid  #a93d26;
+    display: block;
+}
+#parrafo{ /*Para poder aliniar a la izquierda */
+    text-align: left;
+}
 
 footer{
     clear: both; /* Para que se coloque debajo de los elementos flotantes */
