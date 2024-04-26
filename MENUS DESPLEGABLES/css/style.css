@@ -2,7 +2,52 @@
     padding: 0px;
 }
 
-.menu-enlace{
+#header{
+    margin: 20px 80px;
+    padding: 20px 0px;
+}
+
+.nav{
+    position: relative; /*Posicionamos el menu*/
+}
+
+ul{
+    list-style: none; /*Para quitar las viñetas*/
+}
+
+.nav li a{
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block; /*Ponemos los que estan dentro de la lista como bloque*/
+}
+
+.nav li a:hover{
+    background-color: plum;
+}
+
+/*Atención a partir de aquí primero vamos realizar el menu y despues el submenu*/
+
+/* menu */
+.nav > li{ /*Para poner en una linea los li que cuelgan directamente del nav*/
+    float: left;
+}
+
+/* submenu */
+.nav li ul{
+    display: none; /*Oculta los submenus*/
+    position: absolute;
+}
+
+.nav li:hover > ul{  /*Al pasar el ratón por encima mostramos los ul que cuelguen directamente del li del nav*/
+    display: block;
+}
+
+
+
+
+/* .menu-enlace{
     text-decoration: none;
     color: black;
 }
@@ -16,5 +61,5 @@ ul{
     display: inline-flex;
     padding: 20px 0px 20px 0px;
     margin: 0px 80px 0px 80px;
-} /*Voy por el punto 3*/
+}  */
 
