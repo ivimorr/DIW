@@ -1,0 +1,30 @@
+form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
+    width: 710px;
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.2); /*0.2 para darle 20% de opacidad.*/
+    background-image: url();
+    background-position: center center; /*Posicionamos la imagen el centro.*/
+    background-repeat: no-repeat; /*Evitamos que la imagen se repita.*/
+    background-size: cover; /*Ajustamos la imagen para poder cubrir todo el formulario.*/
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 15px;
+}
+
+label{
+    display: block; /*Hacemos que se mustre como bloque.*/
+    margin: auto;
+    text-align: center;
+}
