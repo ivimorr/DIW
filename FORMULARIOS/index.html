@@ -11,12 +11,17 @@
         <form action="">
             <ul>
                 <li>
+                    <h1 class="titulo">Regístrate!</h1>
+                </li>
+                <li>
                     <label for="">Mi nombre es: </label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" id="nombre" name="nombre" autofocus>
+                    <!--E pusto autofocus para que nada mas carge el formulario el campo
+                    nombre tenga foco-->
                 </li>
                 <li>
                     <label for="">Mi email es:</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email"multiple>
                 </li>
                 <li>
                     <label for="">Recuérdame en este equipo</label>
@@ -24,32 +29,37 @@
                 </li>
                 <li>
                     <label for="">Mi dierección web es:</label>
-                    <input type="url" id="url" name="url">
+                    <input type="url" id="url" name="url" placeholder="http://ejemplo.com">
+                    <!--Placeholder para poder poner un ejemplo de url-->
                 </li>
                 <li>
                     <label for="">Me gustaria que mi password fuera: <br> (almenos 6 carcteres, sin esspacios)</label>
-                    <input type="password" id="password1" name="password1">
+                    <input type="password" id="password1" name="password1" pattern="6">
                 </li>
                 <li>
                     <label for="">Mi password repedtida es:</label>
-                    <input type="password" id="password2" name="password2">
+                    <input type="password" id="password2" name="password2" pattern="6">
                 </li>
                 <li>
                     <label for="">En una escala del 1 al 10 mis conocimientos de HTML5 son:</label>
-                    <input type="" id="conocimientos" name="conocimientos">
+                    <input type="range" id="conocimientos" name="conocimientos" min="1" max="10">
                 </li>
                 <li>
                     <label for="">Por favor, indica la subscripción del día:</label>
-                    <input type="date" id="fechaInicio">
+                    <input type="date" id="fechaInicio" placeholder="dd/mm/aaaa">
+                    <!--Placeholder para poder poner un ejemplo de de fecha-->
                 </li>
                 <li>
-                    <label for="">Me gustaría recibir  copias de <em>El manual de HTML5</em></label>
-                    <input type="number" id="cantidad" name="cantidad">
+                    <label for="">Me gustaría recibir  copias de <em>El manual de HTML5:</em></label>
+                    <input type="number" id="cantidad" value="1" name="cantidad" min="0"  max="5">
                 </li>
                 <li>
-                    <label for="">Tambien regístrarme para <em>El manual de CSS3</em> </label>
+                    <label for="">Tambien regístrarme para <em>El manual de CSS3:</em> </label>
+                    <input type="checkbox" id="registro" name="registro">
                 </li>
-                <li><button id="registro-submit">ENVÍAME</button></li>
+                <li>
+                    <button id="registro-submit">ENVÍAME</button>
+                </li>
             </ul>
 
         </form>

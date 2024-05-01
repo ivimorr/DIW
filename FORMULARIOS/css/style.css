@@ -1,3 +1,14 @@
+@font-face{ /*font-face para crear mi propia fuente*/
+    font-family: 'LeagueGotic';
+    src: url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap') format('opnetype');
+    /*Enlace de la fuente sacada de google (https://fonts.google.com/specimen/League+Gothic)*/
+}
+@font-face{
+    font-family: 'AcknowledgementMedium';
+    src:  url('../fuentes/Acknowledgement/Acknowledgement.otf') format('opnetype');
+    /*Fuente descargada de la página web (https://www.fontsquirrel.com/fonts/acknowledgement) y enlace directo desde la carpeta de fuentes*/
+}
+
 form{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -16,15 +27,48 @@ form{
 }
 
 ul{
-    list-style: none;
+    list-style: none; /*Quitamos decorado de la lista*/
 }
 
 li{
-    padding: 15px;
+    padding: 15px; /*Margen interno */
 }
 
 label{
     display: block; /*Hacemos que se mustre como bloque.*/
     margin: auto;
     text-align: center;
+    font-family: 'LeagueGothic', sans-serif;
 }
+
+.titulo{
+    font-size: 2em; /* Tamaño del texto */
+    margin-bottom: 10px; /* Margen interno inferior de 10px y no 20px porque si no se me queda mucho estpacio*/
+    font-family: 'AcknowledgementMedium', sans-serif;
+}
+
+button{
+    border: 0px solid ;
+    border-radius: 5px;
+    background:radial-gradient(rgb(144,144,144),rgb(72,72,72));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: white;
+    opacity: 80%;
+    padding: 10px 30px 10px 30px;
+}
+button:hover{
+    opacity: 100%;
+    transition: 0.20s;
+}
+
+input{
+    
+}
+
+::selection{
+    background-color: #484848;
+    color: #fff;
+    text-shadow: none;
+}
+
