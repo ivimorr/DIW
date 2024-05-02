@@ -1,3 +1,8 @@
+@font-face {
+    font-family:"Luckiest Guy";
+    src: url(../fuentes/Luckiest_Guy/LuckiestGuy-Regular.ttf);
+    /*Fuente descargada de la página web (https://fonts.google.com/selection) y enlace directo desde la carpeta de fuentes*/
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -65,18 +70,21 @@ li{
     background-image: url(../img/book.png);
     background-repeat: no-repeat;
     background-position:center 10px; /*centramos y lo ponemos en la zona superior*/
+    font-family:"Luckiest Guy";
 }
 
 #li2{
     background-image: url(../img/film.png);
     background-repeat: no-repeat;
     background-position:center 10px;
+    font-family:"Luckiest Guy";
 }
 
 #li3{
     background-image: url(../img/mail.png);
     background-repeat: no-repeat;
     background-position:center 10px;
+    font-family:"Luckiest Guy";
 }
 
 /* a{
@@ -222,14 +230,14 @@ ul{
 .nav-ul li a{
     color: white;
     text-decoration: none;
-    text-shadow: 0px 0px 5px white;
+    text-shadow: 2px 2px 0px #f06529;
     transition:text 0.5s;
     display: inline-block;
 }
 
 .nav-ul li a:hover{
     color: white;
-    text-shadow: 0px 0px 0px red;
+    text-shadow: 0px 0px 5px #ff7e42;
 }
 
 
