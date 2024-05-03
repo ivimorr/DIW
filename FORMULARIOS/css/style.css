@@ -1,7 +1,7 @@
 @font-face{ /*font-face para crear mi propia fuente*/
     font-family: 'LeagueGotic';
-    src: url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap') format('opnetype');
-    /*Enlace de la fuente sacada de google (https://fonts.google.com/specimen/League+Gothic)*/
+    src: url('../fuentes/League_Gothic/LeagueGothic-Regular-VariableFont_wdth.ttf');
+    /*Fuente descargada de la página web (https://fonts.google.com/specimen/League+Gothic) y enlace directo desde la carpeta de fuentes*/
 }
 @font-face{
     font-family: 'AcknowledgementMedium';
@@ -18,16 +18,50 @@ form{
     border-bottom: 2px solid #888;
     width: 710px;
     text-align: center;
-    margin: 20px;
+    margin: 20px auto;
     background-color: rgba(0, 0, 0, 0.2); /*0.2 para darle 20% de opacidad.*/
-    background-image: url();
-    background-position: center center; /*Posicionamos la imagen el centro.*/
+    background-image: url(../img/bg-form.png);
+    background-position: bottom; /*Posicionamos la imagen el centro.*/
     background-repeat: no-repeat; /*Evitamos que la imagen se repita.*/
-    background-size: cover; /*Ajustamos la imagen para poder cubrir todo el formulario.*/
+    background-size: 100%; /*Ajustamos la imagen para poder cubrir todo el formulario.*/
 }
+#cantidad{
+    width: 40px;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+#titulo-bloque{
+    display: flex; /*Hacemos que este bloque sea flexible*/
+    justify-content: space-between; /*Para dejar un espacio entre los elementos.*/
+}
+.mano-derecha{
+    background-image: url(../img/bg-formtitle-right.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    width: 100px;
+    height: 30px;
+}
+/*background: url(../img/bg-formtitle-left.png) left  no-repeat,
+url(../img/bg-formtitle-right.png) right  no-repeat;
+*/
+
+.mano-izquierda{
+    background-image: url(../img/bg-formtitle-left.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    width: 100px;
+    height: 30px;
+}
+
 
 ul{
     list-style: none; /*Quitamos decorado de la lista*/
+    padding-left: 0px;
 }
 
 li{
@@ -38,7 +72,7 @@ label{
     display: block; /*Hacemos que se mustre como bloque.*/
     margin: auto;
     text-align: center;
-    font-family: 'LeagueGothic', sans-serif;
+    font-family: 'LeagueGotic';
 }
 
 .titulo{
@@ -47,28 +81,57 @@ label{
     font-family: 'AcknowledgementMedium', sans-serif;
 }
 
+ul > li > button{
+    font-family: 'LeagueGotic';
+}
 button{
     border: 0px solid ;
     border-radius: 5px;
-    background:radial-gradient(rgb(144,144,144),rgb(72,72,72));
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:radial-gradient(rgb(144,144,144,1) 0%, rgb(72,72,72,0.80) 100%);
     font-size: 2em;
     color: white;
     opacity: 80%;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 100px 10px 100px;
 }
 button:hover{
     opacity: 100%;
-    transition: 0.20s;
+    transition: 0.20s linear;
 }
 
 input{
-    
+    background: none;
+    border: none;
+    height: 25px;
+    border-bottom: 2px solid #888 ;
+    width: 300px;
+    text-align: center;
 }
-
-::selection{
+input:focus{ /*Aquí seleccionamos como queremmos que se muestre el imput cuando le hagamos foco*/
     background-color: #484848;
     color: #fff;
     text-shadow: none;
 }
+
+input:required{
+    background-image: url('../img/required.png');
+    background-repeat: no-repeat;
+    background-position:right ;
+}
+
+ input:valid:focus{/*Cuando el cuando un campo tiene el foco y cumple la validación se aplicarala imagen*/
+    background-image: url('../img/valid.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+
+
+input:invalid:focus{/*Cuando el cuando un campo tiene el foco y no cumple la validación se aplicarala imagen*/
+    background-image: url('../img/invalid.png');
+    background-position: right;
+    background-repeat: no-repeat;
+} 
+
+
+
 
