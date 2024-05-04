@@ -25,19 +25,20 @@
                 </ul>
             </nav>
             <content>
-                <div id="contenedor-form">
+                <div class="contenedor-form">
                     <h1 id="titulo-form">Contáctenos</h1>
                     <form action="">
-
-                    <label for="">Escriba su nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
-
-                    <label for="">Escriba su email:</label>
-                    <input type="email" name="email" id="email">
-
-                    <label for="">Su mensaje...</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                    
+                    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre:">
+                    <label for=""></label>
+                    <input type="email" name="email" id="email" placeholder="Escriba su email:">
+                    <label for=""></label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Su mensaje..."></textarea>
+                    <datalist id="nombres">
+                        <option value="alex">
+                        <option value="juan">
+                        <option value="ana">
+                        <option value="pedro">
+                    </datalist>
                     <button>Enviar</button>
                     </form>
                 </div>

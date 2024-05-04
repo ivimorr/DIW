@@ -3,7 +3,7 @@
 
 @font-face {
     font-family:"Luckiest Guy";
-    src: url(../fuentes/Luckiest_Guy/LuckiestGuy-Regular.ttf);
+    src: url('../fuentes/Luckiest_Guy/LuckiestGuy-Regular.ttf');
     /*Fuente descargada de la página web (https://fonts.google.com/selection) y enlace directo desde la carpeta de fuentes*/
 }
 *{
@@ -90,6 +90,8 @@ li{
     font-family:"Luckiest Guy";
 }
 
+/*-----------------------------------------------------------------*/
+
 /*Todo lo relacionado al Content y el formulario.*/
 content{
     font-size: 0.8em;
@@ -99,32 +101,143 @@ content{
     background-image: url(../img/fondoForm.jpg); /*Imagen de fondo*/
     background-position: center; /*Centramos la imagen de fondo*/
     background-size: cover;/*Hacemos que la imagen  cubra todo el fondo. */
+    justify-content: center;
+    justify-self: center;
     text-align: center;
 }
-#contenedor-form{
+.contenedor-form{
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-content: left;
+    align-items: left;
     margin: 50px;
-    width: 600px;
-    padding: 20px 50px 20px 50px;
+    width: 700px;
+    padding: 20px 0px 20px 50px;
     background-color: rgb(200, 200, 200,0.7); /*Color de fondo y con el valor 0.7 determinamos la opacidad.*/
-    text-align: left;
     box-shadow: 3px 0px 8px rgb(0,0,0,0.4);
 }
-
+form{
+    flex-direction: column; /*los elementos del formulario se apilarán verticalmente*/
+    height: 100%;
+    display: flex; /*le damos flexibilidad al contenedor */
+}
   
 #titulo-form{
     position: absolute;
+    top: -16px;
+    margin-left: calc(70% - 25px);/*Con calc() establecemos el margen izquierdo del elemento como el 70% del ancho del contenedor padre menos 25 píxeles. */
+    align-items: right;
     background-color: rgb(255, 255, 255,0.7);
     font-family: "Aguafina Script", cursive;/*Añadimos la fuente importada.*/
     font-weight: 400;
     font-style: normal;
     letter-spacing: 5px; /*Para darle tamaño entre letras*/
-    box-shadow: 0px 0px 2px #777;
+    text-shadow: 0px 0px 2px #777;
     padding: 0px 10px 0px 10px;
 }
 
 
+ .contenedor-form  input,textarea {
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgb(0, 0, 0,0.3),/*Primera sombra*/
+                inset 0px 0px 40px rgb(0, 0, 0,0.1) ; /*Segunda sombra interna*/
+    color: black;
+    font-weight: bold;
+    padding: 1px 45px 1px 4px;
+    margin-bottom:10px;
+    transition: all 0.4s ease-in;
+}
+
+.contenedor-form input[type="text"], .contenedor-form input[type="email"]{
+    height: 32px;    
+    width: 330px;
+}
+.contenedor-form input[type="text"]:focus, 
+.contenedor-form input[type="email"]:focus{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgb(255, 255, 255);
+}
+
+.contenedor-form input[type="text"]{
+    background-image: url('../img/icon-nombre.png');
+    background-repeat: no-repeat;
+    background-size: left 10px ;
+    
+}
+ 
+.contenedor-form input[type="email"]{
+    background-image: url('../img/icon-correo.png');
+    background-repeat: no-repeat;
+    background-size: left 10px ;
+    
+}.contenedor-form input::placeholder{ /*Par que el placeholder no se solape con el icono*/
+    padding-left: 30px;
+}
+
+.contenedor-form textarea::placeholder{
+    padding-left: 35px;
+}
+
+input:valid:focus{/*Cuando el cuando un campo tiene el foco y cumple la validación se aplicarala imagen*/
+    background-image: url('../img/valid.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+
+
+input:invalid:focus{/*Cuando el cuando un campo tiene el foco y no cumple la validación se aplicarala imagen*/
+    background-image: url('../img/invalid.png');
+    background-position: right;
+    background-repeat: no-repeat;
+} 
+
+/*Este selector selecciona cualquier <label> hemano adyacente inmediato de un imput
+con el atributo required*/
+input + label::after{ 
+    content: '*';
+}
+
+label{
+    text-align: left;
+}
+
+
+.contenedor-form textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-image: url('../img/icon-mensaje.png');
+    background-position: left;
+    font-size: 1em;
+    width: 500px;
+    height: 150px;
+    background-position: 10px;
+
+}
+
+textarea:focus{
+    box-shadow: 0px 0px 12px rgb(225 , 225,225);
+}
+
+button{
+    margin: 10px 0px;
+    padding: 10px;
+    color: white;
+    border: solid 1px #434343;
+    background:linear-gradient(to bottom,#e5e5e5,#2a2a2a) ;
+    box-shadow: 0px 1px 1px #353535 inset;
+    cursor: pointer;
+    width: 100px;
+}
+
+button:hover{
+    background:linear-gradient(to top,#e5e5e5,#2a2a2a) ;
+}
+
+
+/*Aquí termina todo lo relacionado con el formulario.*/
+/*-----------------------------------------------------------------*/
 footer{
     clear: both; /* Para que se coloque debajo de los elementos flotantes */
     font-size: 0.7;
