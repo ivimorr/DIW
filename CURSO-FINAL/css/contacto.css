@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+/*Importamos una funte desde google de la pagina web: (https://fonts.google.com/selection/embed)*/
+
+@font-face {
+    font-family:"Luckiest Guy";
+    src: url('../fuentes/Luckiest_Guy/LuckiestGuy-Regular.ttf');
+    /*Fuente descargada de la página web (https://fonts.google.com/selection) y enlace directo desde la carpeta de fuentes*/
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    background-color: #ffffff;
+}
+
+body{
+    margin-top: 0px;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(227, 76, 38) 0%, rgba(240, 101, 41,0) 90%);
+    /*Color final del degradado con opacidad 0 al 90% del degradado (rgb(240, 101, 41, 0)) */
+}
+
+header h1{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    position: relative;
+    padding-left: 100px;
+
+}
+
+header h1 img{
+    position: absolute;
+    left: 0; /* Alinea la imagen a la izquierda */
+
+}
+
+
+#page{
+    width: 1000px;
+    margin: 0px auto 0px auto;
+    text-align: left;
+    padding-top: 20px;
+    padding:10px 0px 0px 0px ;
+    box-shadow: 11px 18px 10px -3px rgba(0,0,0,0.81);
+}
+
+header{
+    padding:  20px 100px 20px 50px;
+    font-family: white 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    border-bottom: 6px black solid;
+    background-color: #0170B9; /*por problemas con el fondo de header*/
+    /* background-image: url('../img/logo.png');  */
+    background-repeat: no-repeat; /*Evitamos que no se repita*/
+    background-position: 25px center; /*Desplazamos 25px a la izquierda y evitamos que no se repita*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+
+li{
+    padding-top: 80px;
+    margin: 0px 100px 20px 100px;
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default; /*Establecemos el cursor por defecto*/
+}
+
+#li1{
+    background-image: url(../img/book.png);
+    background-repeat: no-repeat;
+    background-position:center 10px; /*centramos y lo ponemos en la zona superior*/
+    font-family:"Luckiest Guy";
+}
+
+#li2{
+    background-image: url(../img/film.png);
+    background-repeat: no-repeat;
+    background-position:center 10px;
+    font-family:"Luckiest Guy";
+}
+
+#li3{
+    background-image: url(../img/mail.png);
+    background-repeat: no-repeat;
+    background-position:center 10px;
+    font-family:"Luckiest Guy";
+}
+
+/*-----------------------------------------------------------------*/
+
+/*Todo lo relacionado al Content y el formulario.*/
+content{
+    font-size: 0.8em;
+   background-color: white;
+    width: 100%; /*Introducidos despues de poner el el elmento float en article*/
+    display: flex; /*Ponemos display flex y no table ni no el contenido del content se mesdeplazara creando columnas con los moviles*/
+    background-image: url(../img/fondoForm.jpg); /*Imagen de fondo*/
+    background-position: center; /*Centramos la imagen de fondo*/
+    background-size: cover;/*Hacemos que la imagen  cubra todo el fondo. */
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+}
+.contenedor-form{
+    position: relative;
+    display: flex;
+    align-content: left;
+    align-items: left;
+    margin: 50px;
+    width: 700px;
+    padding: 20px 0px 20px 50px;
+    background-color: rgb(200, 200, 200,0.7); /*Color de fondo y con el valor 0.7 determinamos la opacidad.*/
+    box-shadow: 3px 0px 8px rgb(0,0,0,0.4);
+}
+form{
+    flex-direction: column; /*los elementos del formulario se apilarán verticalmente*/
+    height: 100%;
+    display: flex; /*le damos flexibilidad al contenedor */
+}
+  
+#titulo-form{
+    position: absolute;
+    top: -16px;
+    margin-left: calc(70% - 25px);/*Con calc() establecemos el margen izquierdo del elemento como el 70% del ancho del contenedor padre menos 25 píxeles. */
+    align-items: right;
+    background-color: rgb(255, 255, 255,0.7);
+    font-family: "Aguafina Script", cursive;/*Añadimos la fuente importada.*/
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px; /*Para darle tamaño entre letras*/
+    text-shadow: 0px 0px 2px #777;
+    padding: 0px 10px 0px 10px;
+}
+
+
+ .contenedor-form  input,textarea {
+    display: inline-block;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 1px 4px rgb(0, 0, 0,0.3),/*Primera sombra*/
+                inset 0px 0px 40px rgb(0, 0, 0,0.1) ; /*Segunda sombra interna*/
+    color: black;
+    font-weight: bold;
+    padding: 1px 45px 1px 4px;
+    margin-bottom:10px;
+    transition: all 0.4s ease-in;
+}
+
+.contenedor-form input[type="text"], .contenedor-form input[type="email"]{
+    height: 32px;    
+    width: 330px;
+}
+.contenedor-form input[type="text"]:focus, 
+.contenedor-form input[type="email"]:focus{
+    width: 370px;
+    box-shadow: 0px 0px 12px rgb(255, 255, 255);
+}
+
+.contenedor-form input[type="text"]{
+    background-image: url('../img/icon-nombre.png');
+    background-repeat: no-repeat;
+    background-size: left 10px ;
+    
+}
+ 
+.contenedor-form input[type="email"]{
+    background-image: url('../img/icon-correo.png');
+    background-repeat: no-repeat;
+    background-size: left 10px ;
+    
+}.contenedor-form input::placeholder{ /*Par que el placeholder no se solape con el icono*/
+    padding-left: 30px;
+}
+
+.contenedor-form textarea::placeholder{
+    padding-left: 35px;
+}
+
+input:valid:focus{/*Cuando el cuando un campo tiene el foco y cumple la validación se aplicarala imagen*/
+    background-image: url('../img/valid.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+
+
+input:invalid:focus{/*Cuando el cuando un campo tiene el foco y no cumple la validación se aplicarala imagen*/
+    background-image: url('../img/invalid.png');
+    background-position: right;
+    background-repeat: no-repeat;
+} 
+
+/*Este selector selecciona cualquier <label> hemano adyacente inmediato de un imput
+con el atributo required*/
+input + label::after{ 
+    content: '*';
+}
+
+label{
+    text-align: left;
+}
+
+
+.contenedor-form textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-image: url('../img/icon-mensaje.png');
+    background-position: left;
+    font-size: 1em;
+    width: 500px;
+    height: 150px;
+    background-position: 10px;
+
+}
+
+textarea:focus{
+    box-shadow: 0px 0px 12px rgb(225 , 225,225);
+}
+
+button{
+    margin: 10px 0px;
+    padding: 10px;
+    color: white;
+    border: solid 1px #434343;
+    background:linear-gradient(to bottom,#e5e5e5,#2a2a2a) ;
+    box-shadow: 0px 1px 1px #353535 inset;
+    cursor: pointer;
+    width: 100px;
+}
+
+button:hover{
+    background:linear-gradient(to top,#e5e5e5,#2a2a2a) ;
+}
+
+
+/*Aquí termina todo lo relacionado con el formulario.*/
+/*-----------------------------------------------------------------*/
+footer{
+    clear: both; /* Para que se coloque debajo de los elementos flotantes */
+    font-size: 0.7;
+    color: white;
+    text-align:center;
+    background: linear-gradient(to top, #0170B9, #27AADE );
+    border-top: solid black 6px;
+    padding:15px 0px 15px 0px ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.afooter{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+/*Menu desplegable para los videos*/
+
+nav{
+    font-family: silver 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    text-align: center;
+    background: linear-gradient(to bottom, rgb(213, 186, 50), rgb(255, 218, 62) );
+    position: relative;
+}
+
+.nav-ul{
+    position:relative;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-ul li a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 0px #f06529;
+    transition:text 0.5s;
+    display: inline-block;
+}
+
+.nav-ul li a:hover{
+    color: white;
+    text-shadow: 0px 0px 5px #ff7e42;
+}
+
+
+/*Menú*/
+.nav-ul > li{
+    /*si pongo float:left; lo unico que hace es perder la estetica de la página*/
+}
+
+/* submenú */
+.nav-ul li ul{
+    display: none;
+    position: absolute;
+    
+}
+
+.nav-ul li:hover >ul{
+    display: block;
+}
+
+.nav-ul > li > ul > li > a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+   
+}

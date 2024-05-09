@@ -1,0 +1,37 @@
+nav ul{
+    position: relative;
+}
+
+nav ul li ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display:inline-block;
+}
+
+nav ul li ul li{
+    background-color: #f06529;
+}
+
+
+nav ul li ul li:hover{
+    background-color:#ff7e42;
+}
+
+/*menu*/
+
+nav ul li ul li{
+    list-style-type: none;
+}
+/*submenu*/
+nav ul li ul{
+    display: none; /*Ocultamos los submenus*/
+    position: absolute;
+} 
+
+nav ul li:hover > ul{
+    display: block;
+    z-index: 1;
+    padding: 10px 0px 0px 0px;
+}
+
