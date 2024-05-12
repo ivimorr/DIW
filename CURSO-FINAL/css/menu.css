@@ -12,6 +12,10 @@ nav ul li ul li a{
 nav ul li ul li{
     background-color: #f06529;
 }
+/* (even) Selecciona todos los elementos que son hijos pares de su elemento padre*/
+nav ul li ul li:nth-child(even){
+    background-color: #e34c26;
+}
 
 
 nav ul li ul li:hover{
@@ -33,5 +37,6 @@ nav ul li:hover > ul{
     display: block;
     z-index: 1;
     padding: 10px 0px 0px 0px;
+    transition: 0.5s;
 }
 

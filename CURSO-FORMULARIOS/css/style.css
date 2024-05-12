@@ -175,10 +175,10 @@ article:hover .chincheta{ /*Cuando el ratón toque el article (movil) la chinche
 
 
 article:nth-child(1):hover {
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
 }
 article:nth-child(3):hover {
-    transform: rotate(-5deg);
+    transform: rotate(5deg);
 }
 
 .article_header img{

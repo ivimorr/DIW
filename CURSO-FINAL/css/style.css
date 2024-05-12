@@ -1,3 +1,9 @@
+@font-face {
+    font-family:"Luckiest Guy";
+    src: url(../fuentes/Luckiest_Guy/LuckiestGuy-Regular.ttf);
+    /*Fuente descargada de la página web (https://fonts.google.com/selection) y enlace directo desde la carpeta de fuentes*/
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,13 +15,25 @@ html {
 body{
     margin-top: 0px;
     text-align: center;
-    background: linear-gradient(to bottom, rgb(227, 76, 38) 0%, rgba(240, 101, 41,0) 90%);    
+    background: linear-gradient(to bottom, rgb(227, 76, 38) 0%, rgba(240, 101, 41,0) 90%);
     /*Color final del degradado con opacidad 0 al 90% del degradado (rgb(240, 101, 41, 0)) */
 }
 
-h1{
+header h1{
     color: white;
     font-family:'Courier New', Courier, monospace;
+    position: relative;
+    padding-left: 150px;
+
+
+}
+
+header h1 img{
+     position: absolute; 
+    left: 0; /* Alinea la imagen a la izquierda */
+    top:-13px;
+    width: 80px;
+    padding: 0px;
 }
 
 #page{
@@ -28,18 +46,19 @@ h1{
 }
 
 header{
-    padding:  20px 100px 20px 90px;
+    padding:  20px 100px 20px 50px;
     font-family: white 'Courier New', Courier, monospace;
     font-size: 1.1em;
     border-bottom: 6px black solid;
     background-color: #0170B9; /*por problemas con el fondo de header*/
-    background-image: url('../img/logo.png'), linear-gradient(to bottom, #0170B9, #27AADE); /*Se le añade aquí el degradado*/
+    /* background-image: url('../img/logo.png');  */
     background-repeat: no-repeat; /*Evitamos que no se repita*/
     background-position: 25px center; /*Desplazamos 25px a la izquierda y evitamos que no se repita*/
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
+/*--------------------------------------
+Todo lo relacionado al nav de la página.*/
 nav{
     font-family: silver 'Courier New', Courier, monospace;
     font-size: 1.4em;
@@ -60,18 +79,21 @@ nav{
     background-image: url(../img/book.png);
     background-repeat: no-repeat;
     background-position:center 10px; /*centramos y lo ponemos en la zona superior*/
+
 }
 
 #li2{
     background-image: url(../img/film.png);
     background-repeat: no-repeat;
     background-position:center 10px;
+
 }
 
 #li3{
     background-image: url(../img/mail.png);
     background-repeat: no-repeat;
     background-position:center 10px;
+
 }
 
 a{
@@ -79,10 +101,22 @@ a{
     text-decoration: none;
 }
 
-#li1 > a:hover, #li2 > a:hover, #li3 > a:hover { /*Color naranja solo para los enlaces del menu.*/
-    color: orange;
+#li1 > a,#li2 > a,#li3 > a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 0px #f06529;
+    transition:text 0.5s;
+    display: inline-block;
+    font-family:"Luckiest Guy"; /*solo para los enlaces del menu*/
+
 }
 
+#li1 > a:hover, #li2 > a:hover, #li3 > a:hover { /*Color naranja solo para los enlaces del menu.*/
+    color: white;
+    text-shadow: 0px 0px 5px #ff7e42;
+}
+/*-----------------------------------------------
+Todo lo relacionado al contenido de la pagina*/
 content{
     font-size: 0.8em;
    background-color: white;
@@ -104,19 +138,21 @@ article{
     border-image-source: url("../img/movil.png"); /* Ruta de la imagen del borde */
     border-image-slice: 70 20 60 20; /* Ancho del área a lo largo del borde para la imagen */
     border-image-width: 70px 10px 70px 10px; /* Ancho del borde */
-    border-image-repeat:stretch;
+    border-image-repeat:stretch; /*Nos permite controlar cómo se repite o exitiende la imagen de borde
+     a lo largo de un elemnento. El valor stretch nos indica que la imagen de borde se estirará para cubrir todo el elemnto.*/
+    position: relative;
 }
 
-article img[src*="javascript.png"]{ 
+article img[src*="javascript.png"]{
     background: radial-gradient(circle at center, #ffffff 0%, #cecece 200%);
     padding: 23px 0px 20px 15px;
     border:0px 0px 0px 0px ;
     margin: 60px 0px 0px 0px;
     height: 130px;
     width: 235px;
-    /*Con este atributo seleccionamos todos las 
+    /*Con este atributo seleccionamos todos las
     imagenes<img> que contengan el atributo 'src' que contenga el texto de javascript*/
-    
+
 }
 article .article_header h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -125,11 +161,23 @@ article .article_header h2{
     font-size: 1.2em;
 }
 
+/*transform nos permitira que el article seleccionado rote los grados
+necesarios en este caso hacemos que roto cuando el cursor pase por encima del
+article. */
+article:nth-child(1):hover {
+    transform: rotate(-5deg);
+}
+article:nth-child(3):hover {
+    transform: rotate(5deg);
+}
+
 .article_header{
     border-bottom:solid 1px #ffffff ;
     width: 250px;
     margin-left: 5px;
+    position: relative;
 }
+
 
 img{
     padding-top: 63px;
@@ -138,6 +186,27 @@ img{
     width: 249px;
 }
 
+.chincheta{
+    position: absolute;
+    width: 35px;
+    height: 49px;
+    top: -9px;
+    background-image: url('../img/chincheta.png');
+}
+
+content article .chincheta{
+    left: 199px;
+}
+content article:nth-child(2) > .chincheta{
+    left: 120px;
+}
+content article:last-child > .chincheta{
+    left: 30px;
+}
+
+
+/*------------------------------------------------
+Todo lo relacioneado al footer dela pagina.*/
 footer{
     clear: both; /* Para que se coloque debajo de los elementos flotantes */
     font-size: 0.7;
@@ -158,3 +227,21 @@ footer{
 p{
     font-size: 1.2em;
 }
+
+/*Animaciones*/
+/*Definimos la animación*/
+@keyframes rotarLogo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+header h1:hover > img{
+    animation: rotarLogo 5s infinite;
+} 
