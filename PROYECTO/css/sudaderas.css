@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Conrnerstone" ;
+    src: url(../fuentes/Cornerstone.ttf); 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px ;
+    text-align: center;
+    width: 100%; /* Asegura que el body ocupe el 100% del ancho de la ventana */
+}
+
+/*Todo lo relacionado con el header*/
+header{
+    height: 90px;
+    display: flex;
+    background-color: #363636;
+}
+
+header h1{
+    margin:30px 0px 0px 0px ;
+    font-family: "Conrnerstone" ;
+    font-size: 58px;
+    /* color: #cc527a; */
+    color: #e7b82f;
+}
+
+header  img{
+    width: 90px; 
+    height: auto;
+    margin: 0px 200px 0px 50px;
+    border: 2px solid #270f07;
+
+}
+
+
+
+/*Todo lo relacionado con el nav*/
+nav{
+    height: 90px;
+    border-bottom: 1px  solid #270f07;
+    border-top:1px solid  #270f07;
+    font-size: 1.4em;
+    text-align: center;
+    display: flex;
+    background-color: #a8a7a7;
+}
+
+
+#li1,#li2,#li3,#li4{
+    padding-top: 30px ;
+    display: inline-block;
+    margin: 0px 150px 0px 150px;
+    font-family: "Conrnerstone" ;
+    font-size: 25px;
+    
+}
+
+
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*Todo lo relacionado con el content*/
+
+
+
+
+
+/*Todo lo relacionado con el footer*/
+
+footer{
+    height: 90px;
+    border-top: solid black 1px;
+    justify-content: center;
+    background-color: #363636;
+    position: relative;
+    
+}
+
+footer p{
+    margin-top: 10px;
+    color: #e7b82f;
+    
+    
+}
+
+#insta{
+    width: 40px;
+    height: 40px;
+    border: solid 4px #785cac;
+    border-radius: 40px;
+    background-color: #785cac;
+    background-image: url("../img/instagram-white-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* margin-top: 40px; */
+    position: absolute;
+    left: 740px;
+    top: 35px;
+    list-style: none;
+}
+
+#tiktok{
+    width: 40px;
+    height: 40px;
+    border: solid 4px #785cac;
+    border-radius: 40px;
+    background-color: #785cac;
+    background-image: url("../img/Tik-Tok-70.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 500;
+    /* margin-top: 40px; */
+    position: absolute;
+    left: 810px;
+    top: 35px;
+    list-style: none;
+}

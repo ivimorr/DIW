@@ -1,0 +1,48 @@
+nav ul{
+    position: relative;
+}
+
+nav ul li ul li a{
+    color: #dbd3bd;
+    text-decoration: none;
+    padding: 10px 15px;
+    display:inline-block;
+}
+
+nav ul li ul li{
+    background-color:  #785cac;
+}
+/* (even) Selecciona todos los elementos que son hijos pares de su elemento padre*/
+nav ul li ul li:nth-child(even){
+    background-color: #9264e1;
+}
+
+
+nav ul li ul li:hover{
+    background-color: #9b84c5;
+}
+
+nav ul li ul li{
+    background-color: #785cac;
+}
+
+/*menu*/
+
+nav ul li ul li{
+    list-style-type: none;
+    text-align: center;
+}
+
+/*submenu*/
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    padding: 10px 0px 0px 0px;
+}
+
+nav ul li:hover > ul{
+    display: block;
+    z-index: 1;
+    transition: 0.5s;
+}
