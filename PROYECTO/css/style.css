@@ -29,11 +29,9 @@ header h1{
 }
 
 header  img{
-    width: 90px; 
-    height: auto;
+    width: 100px; 
+    height: 100px;
     margin: 0px 200px 0px 50px;
-    border: 2px solid #270f07;
-
 }
 
 
@@ -72,7 +70,7 @@ nav li a{
 content{
     font-size: 0.8em;
     display: flex; /*Ponemos display flex y no table ni no el contenido del content se mesdeplazara creando columnas con los moviles*/
-    background-color: #dbd3bd;
+    background-color: #f7e4c9;
 }
 
 article{
