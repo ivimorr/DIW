@@ -97,17 +97,17 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-article img[src*="Yellow and Grey sweatshirts.jpeg"]{
+article img[src*="Yellow and Grey sweatshirts.png"]{
     margin-bottom: 10px;
     height: 350px;
 }
 
-article img[src*="Converse Picture.jpeg"]{
+article img[src*="Converse Picture.png"]{
     height: 300px;
     margin-bottom: 55px;
 }
 
-article img[src*="Amour Liah Jacket.jpeg"]{
+article img[src*="Amour Liah Jacket.png"]{
     height: 355px;
     margin-bottom: 10px;
 

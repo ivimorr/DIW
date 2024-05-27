@@ -19,6 +19,7 @@ header{
     height: 90px;
     display: flex;
     background-color: #363636;
+    
 }
 
 header h1{
@@ -35,7 +36,18 @@ header  img{
     margin: 0px 200px 0px 50px;
 }
 
+section{
+   
+}
 
+content .article1 h3{
+    font-family: "Conrnerstone" ;
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+
+}
 
 /*Todo lo relacionado con el nav*/
 nav{
@@ -77,19 +89,21 @@ content{
 .article1{
     position: relative;
     width: 100%;
-    height: 600px;
-    border: 1px solid black;
+    height: 700px;
+    border: 1px solid #dbd3bd;
     background-color: #dbd3bd;
-    
+    padding: 50px 0px 0px 0px;
     
 }
 
 .article2{
     width: 100%;
-    height: 600px;
-    border: 1px solid black;
+    height: 800px;
+    border: 1px solid #dbd3bd;
     background-color: #dbd3bd;
 }
+
+/* ----------------------------- Article 1*/
 
 /*Carrusel*/
 /* Contenedor para centrar */
@@ -99,7 +113,9 @@ content{
     flex-direction: column;
     margin-top: 30px;
     position: absolute;
-    left: 200px;
+    left: 50px;
+    top: 150px;
+    
   }
   /* Input */
   input{display: none}
@@ -182,50 +198,100 @@ content{
   #Slider1:checked ~ .Selectors .Selector:nth-of-type(1) {background-color: #999999;}
   #Slider2:checked ~ .Selectors .Selector:nth-of-type(2) {background-color: #999999;}
   #Slider3:checked ~ .Selectors .Selector:nth-of-type(3) {background-color: #999999;}
+/*Aside*/
 
-
-/* video{
+aside {
     width: 500px;
-    height: 500px;
-    border: 8px #270f07 solid;
-    text-align: center;
-    line-height: 1.8em; /*Esta propiedad controla la altura de línea en un bloque de texto*/
-    /* padding: 5px 5px 22px 5px ; 
-    padding: 0px;
-    margin: 30px 10px 30px 30px ;
-    background-color: #ffffff;
+    height: 400px;
+    background-color: #e0dbcb; /*Color de fondo y con el valor 0.7 determinamos la opacidad.*/
+    box-shadow: 3px 0px 8px rgb(0,0,0,0.4);
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     position: absolute;
-    border-radius: 6px;
-    left: 510px;
+    right: 250px;
+    top: 150px;
+    
     
 }
-.fila1{
-    position: absolute;
-    left: 200px;
-    top: 50px;
+
+aside ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 1px 0px 20px 0px ;
 }
-.fila2{
-    position: absolute;
-    right: 200px;
-    top: 50px;
-    
+
+aside ul li{
+    list-style-type: none;
+    padding-bottom: 3px;
+    font-size:  1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
-.miniatura{
+
+
+content .article1 aside h4 {
+    font-size: 25px;
+    margin: 5px 0px 20px 0px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+aside p {
+    font-size:  1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    margin: 0px 0px 10px 0px ;
+}
+
+  /*-------------- Article 2*/
+
+
+  .imagenes{
+    width: 100%;
+    margin: 50px 0px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1em;
+    align-items: center; 
+
+  }
+
+  content  .article2 .imagenes img{
     width: 200px;
     height: 150px;
-    border: solid  #833b23  2px;
+    /* border: solid  #833b23  2px; */
+    border-radius: 5px;
+    border: solid  #270f07 2px;
     
-} */
+   } 
 
+content .article2 .imagenes img:hover {
+    /* Agrega tus estilos aquí */
+    transform: scale(2) ; /* Ejemplo: aumentar el tamaño de la imagen */
+    transition: transform 0.3s ease-in-out; /* Suaviza la transición */
+    z-index: 10;
+    
+}
+
+/* content .article2 .imagenes img:target {
+    transform: scale(3); Ajusta la escala según tus necesidades
+    z-index: 10; Asegúrate de que la imagen agrandada esté por encima de las demás
+    position: relative;
+} */
 
 /*Todo lo relacionado con el footer*/
 
 footer{
     height: 90px;
+    width: 100%;
     border-top: solid  #270f07 1px;
     justify-content: center;
     background-color: #363636;
     position: relative;
+    
     
 }
 
