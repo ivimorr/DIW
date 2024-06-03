@@ -10,7 +10,7 @@
 body{
     margin: 0px ;
     text-align: center;
-    width: 100%; /* Asegura que el body ocupe el 100% del ancho de la ventana */
+    width: 1600px; /* Asegura que el body ocupe el 100% del ancho de la ventana */
 }
 
 p{
@@ -21,6 +21,7 @@ p{
 /*Todo lo relacionado con el header*/
 header{
     height: 90px;
+    width: 1600px;
     display: flex;
     background-color: #363636;
 }
@@ -44,6 +45,7 @@ header  img{
 /*Todo lo relacionado con el nav*/
 nav{
     height: 90px;
+    width: 1600px;
     border-bottom: 1px  solid #270f07;
     border-top:1px solid  #270f07;
     font-size: 1.4em;
@@ -74,7 +76,7 @@ nav li a{
 
 .article1{
     position: relative;
-    width: 100%;
+    width: 1600px;
     height: 900px;
     border: 1px solid black;
     background-color: #dbd3bd;
@@ -83,7 +85,7 @@ nav li a{
 }
 
 .article2{
-    width: 100%;
+    width: 1600px;
     height: 800px;
     border: 1px solid #dbd3bd;
     background-color: #dbd3bd;
@@ -139,7 +141,7 @@ content .article1 aside {
 }
 
 
-        /*-----------form*/
+    /*-----------form*/
 
 .form-container{
     position: absolute; /*Para poder desplzarlo dentro de article2 */
@@ -236,12 +238,19 @@ input:invalid:focus{/*Cuando el cuando un campo tiene el foco y no cumple la val
     background-position: right;
     background-repeat: no-repeat;
 } 
-
-/*Este selector selecciona cualquier <label> hemano adyacente inmediato de un imput
-con el atributo required*/
-input + label::after{ 
-    content: '*';
+textarea:valid:focus{/*Cuando el cuando un campo tiene el foco y cumple la validación se aplicarala imagen*/
+    background-image: url('../img/valid.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 30px;
 }
+
+textarea:invalid:focus{/*Cuando el cuando un campo tiene el foco y no cumple la validación se aplicarala imagen*/
+    background-image: url('../img/invalid.png');
+    background-position: right;
+    background-repeat: no-repeat;
+} 
+
 
 label{
     text-align: left;
@@ -273,6 +282,7 @@ button{
     box-shadow: 0px 1px 1px #353535 inset;
     cursor: pointer;
     width: 100px;
+    border-radius: 5px;
 }
 
 button:hover{
@@ -283,6 +293,7 @@ button:hover{
 
 footer{
     height: 90px;
+    width: 1600px;
     border-top: solid black 1px;
     justify-content: center;
     background-color: #363636;

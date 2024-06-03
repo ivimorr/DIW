@@ -67,7 +67,216 @@ nav li a{
 
 /*Todo lo relacionado con el content*/
 
+content{
+    font-size: 0.8em;
+    flex-direction: column; /*Ponemos display flex y no table ni no el contenido del content se mesdeplazara creando columnas con los moviles*/
+    background-color: #dbd3bd;
+}
 
+.article1{
+    position: relative;
+    width: 1600px;
+    height: 1020px;
+    border: 1px solid #dbd3bd;
+    background-color: #dbd3bd;
+    padding: 50px 0px 0px 0px;
+    
+}
+
+.article2{
+    width: 1600px;
+    height: 800px;
+    border: 1px solid #dbd3bd;
+    background-color: #dbd3bd;
+}
+
+/* ----------------------------- Article 1*/
+
+/*Carrusel*/
+/* Contenedor para centrar */
+.ContainerCenter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    
+  }
+  /* Input */
+  input{display: none}
+
+  video{
+    height: 100%;
+    width: 100%;
+    display: block; /* Remove any extra space below the video */
+  }
+
+  
+  
+  
+  /* Slider */
+  .Carrusels{
+    height: 500px;
+    width: 400px;
+    position: relative;
+    overflow-x: hidden;
+    overflow: hidden; /*  no scrollbars */
+    border: 3px  solid #270f07;
+    border-radius: 5px;
+  }
+  .Carrusel{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    overflow-y: hidden;
+    transition: all .5s ease;
+    
+    overflow: hidden; /* No scrollbars */
+    
+  }
+  /* Estado 1 */
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(0%, 0);}
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(100%, 0);}
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(200%, 0);}
+  /* Estado 2 */
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-100%, 0);}
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(0%, 0);}
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(100%, 0);}
+  /* Estado 3 */
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {transform: translate(-200%, 0);}
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {transform: translate(-100%, 0);}
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {transform: translate(0%, 0);}
+  
+  
+  /* Flechas */
+  .Carrusels .ArrowLeft, .Carrusels .ArrowRight{
+    position: absolute;
+    height: 100%;
+    width: 2em;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    user-select: none;
+  }
+  .Carrusels .ArrowLeft{left: 0px;}
+  .Carrusels .ArrowRight{right: 0px;}
+  /* Configuracion de flechas individuales */
+  #Slider1:checked ~ .Carrusels .Arrow1{display: flex;}
+  #Slider2:checked ~ .Carrusels .Arrow2{display: flex;}
+  #Slider3:checked ~ .Carrusels .Arrow3{display: flex;}
+  
+  
+  /* Selectores */
+  .Selectors {
+    width: 60px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .Selectors .Selector {
+    background-color: #FFF;
+    height: 10px;
+    width: 10px;
+    display: block;
+    border-radius: 5px;
+  }
+  /* Condicionales para botón inferior */
+  #Slider1:checked ~ .Selectors .Selector:nth-of-type(1) {background-color: #999999;}
+  #Slider2:checked ~ .Selectors .Selector:nth-of-type(2) {background-color: #999999;}
+  #Slider3:checked ~ .Selectors .Selector:nth-of-type(3) {background-color: #999999;}
+/*Aside*/
+aside{
+    position: absolute;
+    width: 400px;
+    height: 430px;
+    left: 580px;
+    top: 150px;
+}
+
+.about {
+    width: 1000px;
+    height: 230px;
+    background-color: #e0dbcb; /*Color de fondo y con el valor 0.7 determinamos la opacidad.*/
+    box-shadow: 3px 0px 8px rgb(0,0,0,0.4);
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: absolute;
+    left: 280px;
+    bottom: 20px;
+}
+
+.about ul {
+    padding-left: 20px;
+    margin: 1px 0px 15px 350px ;
+}
+
+.about ul li{
+    list-style-type:none;
+    padding-bottom: 3px;
+    font-size:  1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+
+}
+
+.about ul li::before {
+    content: '- ';
+    position:absolute;
+    left: 0px;
+}
+
+
+content .article1 .about h4 {
+    font-size: 25px;
+    margin: 5px 0px 20px 0px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.about p {
+    font-size:  1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    margin: 0px 0px 10px 0px ;
+}
+
+  /*-------------- Article 2*/
+
+
+  .imagenes{
+    width: 100%;
+    margin: 50px 0px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1em;
+    align-items: center; 
+
+  }
+
+  content  .article2 .imagenes img{
+    width: 200px;
+    height: 150px;
+    /* border: solid  #833b23  2px; */
+    border-radius: 5px;
+    border: solid  #270f07 2px;
+    
+   } 
+
+content .article2 .imagenes img:hover {
+    /* Agrega tus estilos aquí */
+    transform: scale(2) ; /* Ejemplo: aumentar el tamaño de la imagen */
+    transition: transform 0.3s ease-in-out; /* Suaviza la transición */
+    z-index: 10;
+    
+}
 
 
 

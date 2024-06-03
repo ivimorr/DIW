@@ -1,134 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/diseños.css">
-    <link rel="stylesheet" href="css/desplegables.css">
-    <title>Document</title>
-</head>
-<body>
-        <header>
-            <img src="img/AntLogo1.png" alt="">
-            <h1>ANT.0807</h1>
-        </header>
-        <nav>
-            <ul>
-                <li id="li1"><a href="index.html">Home</a></li>
-                <li id="li2"><a href="diseños.html">Designs</a></li>
-                <li id="li3"><a href="">Clothes</a>
-                    <ul>
-                        <li class="rounded-top-left"><a href="sudaderas.html">Sweaters and <br> t-shirts</a></li>
-                        <li><a href="zapatillas.html">Shoes</a></li>
-                        <li class="rounded-bottom-right"><a href="accesorios.html">Accessories</a></li>
-                    </ul>
-                </li>
-                <li id="li4"><a href="artista.html">Artist</a>
-                    <ul>
-                        <li class="rounded-top-left"><a href="">About</a></li>
-                        <li class="rounded-bottom-right"><a href="">Contact</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <content>
-            <article class="article1">
-                <section class="intro">
-                    <h2>Discover Unique Handcrafted Designs</h2>
-                    <p>Welcome to ANT.0807, where creativity meets craftsmanship. Our designs are meticulously created by hand, ensuring each piece is unique and of the highest quality. Whether you're looking for an original design or a personalized creation, we are here to make your vision a reality.</p>
-                </section>
-                <h3>Our Designs</h3>
-                <div class="ContainerCenter">
-                    <!-- Radio Seleccionar -->
-                    <input type="radio" name="Carrusel" id="Slider1" checked>
-                    <input type="radio" name="Carrusel" id="Slider2">
-                    <input type="radio" name="Carrusel" id="Slider3">
-
-                    <div class="Carrusels">
-                        <!-- Imagen contenido -->
-                        <div class="Carrusel" > 
-                            <video controls autoplay>
-                                <source src="videos/Diseño Funda_Movil 2024-05-17 at 23.38.35.mp4" type="video/mp4">
-                                
-                            </video>
-                        </div> 
-                        <div class="Carrusel" autoplay >
-                            <video controls >
-                                <source src="videos/Diseño-DragonMorado 2024-05-20 at 09.56.41.mp4" type="video/mp4">
-                                
-                            </video>
-                        </div>
-                        <div class="Carrusel">
-                            <video controls autoplay >
-                                <source src="videos/Diseños random 2024-05-20 at 09.56.46.mp4" type="video/mp4">
-                                
-                            </video>
-                        </div>
-                        
-                        <!-- Flechas a la izquierda por cada imagen -->
-                        <label for="Slider3" class="ArrowLeft Arrow1">❮</label>
-                        <label for="Slider1" class="ArrowLeft Arrow2">❮</label>
-                        <label for="Slider2" class="ArrowLeft Arrow3">❮</label>
-
-                        <!-- Flechas a la derecha por cada imagen -->
-                        <label for="Slider2" class="ArrowRight Arrow1">❯</label> 
-                        <label for="Slider3" class="ArrowRight Arrow2">❯</label>
-                        <label for="Slider1" class="ArrowRight Arrow3">❯</label>
-                    </div>
-
-                    <!-- Selector circulos inferiores colgantes -->
-                    <div class="Selectors">
-                        <label for="Slider1" class="Selector"></label>
-                        <label for="Slider2" class="Selector"></label>
-                        <label for="Slider3" class="Selector"></label>
-                    </div>
-                </div>
-                <!-- Aside Section -->
-                <aside>
-                    <h4>Why Choose Us?</h4>
-                <p>At ANT.0807, we believe in the power of personalized designs. Our custom-made designs allow you to express your individuality and style. Each piece is crafted with the utmost care and attention to detail, ensuring you receive a product that not only looks great but also tells a story.</p>
-                <p><strong>Advantages of Our Custom Designs:</strong></p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/diseños.css">
+        <link rel="stylesheet" href="css/desplegables.css">
+        <title>Document</title>
+    </head>
+    <body>
+            <header>
+                <img src="img/AntLogo1.png" alt="">
+                <h1>ANT.0807</h1>
+            </header>
+            <nav>
                 <ul>
-                    <li>Unique, one-of-a-kind pieces</li>
-                    <li>High-quality materials and craftsmanship</li>
-                    <li>Personalized to your specifications</li>
+                    <li id="li1"><a href="index.html">Home</a></li>
+                    <li id="li2"><a href="diseños.html">Designs</a></li>
+                    <li id="li3"><a href="">Clothes</a>
+                        <ul>
+                            <li class="rounded-top-left"><a href="sudaderas.html">t-shirts</a></li>
+                            <li><a href="zapatillas.html">Shoes</a></li>
+                            <li class="rounded-bottom-right"><a href="accesorios.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li id="li4"><a href="artista.html">Artist</a>
+                        <ul>
+                            <li class="rounded-top-left"><a href="">About</a></li>
+                            <li class="rounded-bottom-right"><a href="">Contact</a></li>
+                        </ul>
+                    </li>
                 </ul>
-                <p>Contact us today to discuss your custom design ideas and let us bring your vision to life!</p>
-                </aside>
-            </article>
-            <article class="article2">
-                <div class="imagenes">
-                    <img src="img/AntGrafiti.png" alt="">
-                    <img src="img/EspeGrafiti.png" alt="">
-                    <img src="img/MaisGrafiti.png" alt="">
-                    <img src="img/MaiteGrafiti.png" alt="">
-                    <img src="img/MirtaGrafiti.png" alt="">
-                    <img src="img/NaesyGraffiti.png" alt="">
-                    <img src="img/NuriaGrafiti.png" alt="">
-                    <img src="img/AshleyGraffiti.png" alt="">
-                    <img src="img/NikitaGrafiti.png" alt="">
-                    <img src="img/DayanitGrafiti.png" alt="">
-                    <img src="img/TargetTeamGrafiti.png" alt="">
-                    <img src="img/Target Team Grafiti2.png" alt="">
-                    <img src="img/Happy 33 rd Grafiti.png" alt="">
-                    <img src="img/Filled drawing.png" alt="">
-                    <img src="img/Colorful design1.png" alt="">
-                    <img src="img/Colorful design2.png" alt="">
-                    <img src="img/Colorful design3.png" alt="">
-                    <img src="img/DrawCaracteres.png" alt="">
-                    <img src="img/DragonDraw.png" alt="">
-                    <img src="img/Dragon Red Draw.png" alt="">
-                    <img src="img/DragonPurpleDraw.png" alt="">
-                    <img src="img/Rose Draw.png" alt="">
-                    <img src="img/HeartsDraw.png" alt="">
-                    <img src="img/OpenMindDraw.jpeg" alt="">
-                </div>
-            </article>
-        </content>
-        <footer>
-            <p>ANT.0807.com</p>
-            <a href="https://www.instagram.com/ant.0807?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" id="insta"></a>
-            <a href="https://www.tiktok.com/@ant.0807" id="tiktok"></a>
-        </footer>
-</body>
+            </nav>
+            <content>
+                <article class="article1">
+                    <h3>Discover Unique Handcrafted Designs</h3>
+                    <div class="ContainerCenter">
+                        <!-- Radio Seleccionar -->
+                        <input type="radio" name="Carrusel" id="Slider1" checked>
+                        <input type="radio" name="Carrusel" id="Slider2">
+                        <input type="radio" name="Carrusel" id="Slider3">
+
+                        <div class="Carrusels">
+                            <!-- Imagen contenido -->
+                            <div class="Carrusel" > 
+                                <video controls autoplay>
+                                    <source src="videos/Diseño Funda_Movil 2024-05-17 at 23.38.35.mp4" type="video/mp4">
+                                    
+                                </video>
+                            </div> 
+                            <div class="Carrusel" autoplay >
+                                <video controls >
+                                    <source src="videos/Diseño-DragonMorado 2024-05-20 at 09.56.41.mp4" type="video/mp4">
+                                    
+                                </video>
+                            </div>
+                            <div class="Carrusel">
+                                <video controls autoplay>
+                                    <source src="videos/Diseños random 2024-05-20 at 09.56.46.mp4" type="video/mp4">
+                                    
+                                </video>
+                            </div>
+                            
+                            <!-- Flechas a la izquierda por cada imagen -->
+                            <label for="Slider3" class="ArrowLeft Arrow1">❮</label>
+                            <label for="Slider1" class="ArrowLeft Arrow2">❮</label>
+                            <label for="Slider2" class="ArrowLeft Arrow3">❮</label>
+
+                            <!-- Flechas a la derecha por cada imagen -->
+                            <label for="Slider2" class="ArrowRight Arrow1">❯</label> 
+                            <label for="Slider3" class="ArrowRight Arrow2">❯</label>
+                            <label for="Slider1" class="ArrowRight Arrow3">❯</label>
+                        </div>
+
+                        <!-- Selector circulos inferiores colgantes -->
+                        <div class="Selectors">
+                            <label for="Slider1" class="Selector"></label>
+                            <label for="Slider2" class="Selector"></label>
+                            <label for="Slider3" class="Selector"></label>
+                        </div>
+                    </div>
+                    <!-- Aside section -->
+                    <aside class="intro">
+                        <p>Welcome to ANT.0807, where creativity meets craftsmanship. Our designs are meticulously created by hand, ensuring each piece is unique and of the highest quality.<br><br>Whether you're looking for an original design or a personalized creation, we are here to make your vision a reality. I pour my passion and expertise into every detail, resulting in designs that are both timeless and contemporary. Whether you are in search of an original design that speaks to your personal style or a personalized creation that captures your vision, I am here to transform your ideas into tangible art.<br><br>My bespoke services invite you to collaborate with me, allowing you to infuse your personal touch into each piece. From concept to completion, I work closely with you to ensure that the final product is a perfect reflection of your individuality. <br><br>Join me on a journey where your creative aspirations are brought to life with unparalleled skill and dedication. Discover the magic of handcrafted artistry at ANT.0807, where every piece tells a story, and every design is a masterpiece.</p>
+                    </aside>
+                    
+                    <!-- About section -->
+                    <div class="about">
+                        <h4>Why Choose Us?</h4>
+                    <p>At ANT.0807, we believe in the power of personalized designs. Our custom-made designs allow you to express your individuality and style. Each piece is crafted with the utmost care and attention to detail, ensuring you receive a product that not only looks great but also tells a story.</p>
+                    <p><strong>Advantages of Our Custom Designs:</strong></p>
+                    <ul>
+                        <li>Unique, one-of-a-kind pieces</li>
+                        <li>High-quality materials and craftsmanship</li>
+                        <li>Personalized to your specifications</li>
+                    </ul>
+                    <p>Contact us today to discuss your custom design ideas and let us bring your vision to life!</p>
+                    </div>
+                </article>
+                <article class="article2">
+                    <div class="imagenes">
+                        <img src="img/AntGrafiti.png" alt="">
+                        <img src="img/EspeGrafiti.png" alt="">
+                        <img src="img/MaisGrafiti.png" alt="">
+                        <img src="img/MaiteGrafiti.png" alt="">
+                        <img src="img/MirtaGrafiti.png" alt="">
+                        <img src="img/NaesyGraffiti.png" alt="">
+                        <img src="img/NuriaGrafiti.png" alt="">
+                        <img src="img/AshleyGraffiti.png" alt="">
+                        <img src="img/NikitaGrafiti.png" alt="">
+                        <img src="img/DayanitGrafiti.png" alt="">
+                        <img src="img/TargetTeamGrafiti.png" alt="">
+                        <img src="img/Target Team Grafiti2.png" alt="">
+                        <img src="img/Happy 33 rd Grafiti.png" alt="">
+                        <img src="img/Filled drawing.png" alt="">
+                        <img src="img/Colorful design1.png" alt="">
+                        <img src="img/Colorful design2.png" alt="">
+                        <img src="img/Colorful design3.png" alt="">
+                        <img src="img/DrawCaracteres.png" alt="">
+                        <img src="img/DragonDraw.png" alt="">
+                        <img src="img/Dragon Red Draw.png" alt="">
+                        <img src="img/DragonPurpleDraw.png" alt="">
+                        <img src="img/Rose Draw.png" alt="">
+                        <img src="img/HeartsDraw.png" alt="">
+                        <img src="img/OpenMindDraw.jpeg" alt="">
+                    </div>
+                </article>
+            </content>
+            <footer>
+                <p>ANT.0807.com</p>
+                <a href="https://www.instagram.com/ant.0807?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" id="insta"></a>
+                <a href="https://www.tiktok.com/@ant.0807" id="tiktok"></a>
+            </footer>
+    </body>
 </html>
