@@ -32,7 +32,7 @@ header  img{
     width: 90px; 
     height: auto;
     margin: 0px 200px 0px 50px;
-    border: 2px solid #270f07;
+    border: 2px solid #363636;
 
 }
 
@@ -69,7 +69,111 @@ nav li a{
 
 /*Todo lo relacionado con el content*/
 
+content .article1 h3{
+    font-family: "Conrnerstone" ;
+    font-size: 30px;
+    position: absolute;
+    left: 170px;
+    top: 60px;
+}
 
+content{
+    font-size: 0.8em;
+    flex-direction: column; /*Ponemos display flex y no table ni no el contenido del content se mesdeplazara creando columnas con los moviles*/
+    background-color: #dbd3bd;
+}
+
+.article1{
+    position: relative;
+    width: 1600px;
+    height: 700px;
+    border: 1px solid #dbd3bd;
+    background-color: #dbd3bd;
+    padding: 50px 0px 0px 0px;
+    
+}
+
+.article2{
+    width: 1600px;
+    height: 390px;
+    border: 1px solid #dbd3bd;
+    background-color: #dbd3bd;
+}
+
+/* ----------------------------- Article 1*/
+.videos{
+    width: 100%;
+    margin: 50px 0px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1em;
+    align-items: center; 
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+
+content  .article1 .videos video{
+    width: 300px;
+    height: 400px;
+    /* border: solid  #833b23  2px; */
+    border-radius: 5px;
+    border: solid  #270f07 2px;
+    
+   } 
+
+/*Aside*/
+.intro {
+    position: absolute;
+    width: 700px;
+    height: 430px;
+    left: 170px;
+    top: 95px;
+    
+}
+
+
+.intro p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:  1.2em;
+    text-align: left;
+    padding-bottom: 3px;
+}
+
+
+  /*-------------- Article 2*/
+
+
+  .imagenes{
+    width: 900px;
+    margin: 50px 0px 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1em;
+    align-items: center; 
+    position: absolute;
+    right: 300px;
+
+  }
+
+  content  .article2 .imagenes img{
+    width: 200px;
+    height: 150px;
+    /* border: solid  #833b23  2px; */
+    border-radius: 5px;
+    border: solid  #270f07 2px;
+    
+   } 
+
+content .article2 .imagenes img:hover {
+    /* Agrega tus estilos aquí */
+    transform: scale(2) ; /* Ejemplo: aumentar el tamaño de la imagen */
+    transition: transform 0.3s ease-in-out; /* Suaviza la transición */
+    z-index: 10;
+    
+}
 
 
 

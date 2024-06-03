@@ -43,14 +43,6 @@ header  img{
    margin-bottom: 5000px;
 }
 
-content .article1 h3{
-    font-family: "Conrnerstone" ;
-    font-size: 30px;
-    position: absolute;
-    right: 200px;
-    top: 60px;
-
-}
 
 /*Todo lo relacionado con el nav*/
 nav{
@@ -83,6 +75,14 @@ nav li a{
 
 /*Todo lo relacionado con el content*/
 
+content .article1 h3{
+    font-family: "Conrnerstone" ;
+    font-size: 30px;
+    position: absolute;
+    right: 200px;
+    top: 60px;
+
+}
 content{
     font-size: 0.8em;
     flex-direction: column; /*Ponemos display flex y no table ni no el contenido del content se mesdeplazara creando columnas con los moviles*/

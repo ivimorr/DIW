@@ -78,7 +78,7 @@ nav li a{
     position: relative;
     width: 1600px;
     height: 900px;
-    border: 1px solid black;
+    border: 1px solid #dbd3bd;
     background-color: #dbd3bd;
     padding: 50px 0px 0px 0px;
     
@@ -86,7 +86,7 @@ nav li a{
 
 .article2{
     width: 1600px;
-    height: 800px;
+    height: 700px;
     border: 1px solid #dbd3bd;
     background-color: #dbd3bd;
     display: flex;
@@ -101,27 +101,44 @@ content .article1 img{
     border-radius: 5px;
     border: solid  #270f07 2px;
     position: absolute;
-    left:300px;
-    top: 100px;
+    left:250px;
+    top: 90px;
 }
 
 
 content .article1 aside {
     width: 500px;
-    height: 800px;
+    height: 720px;
     background-color: #e0dbcb; /*Color de fondo y con el valor 0.7 determinamos la opacidad.*/
     box-shadow: 3px 0px 8px rgb(0,0,0,0.4);
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     position: absolute;
-    right: 110px;
-    top: 100px;
-    
-    
+    right: 150px;
+    top: 90px;
+}
+content .article1 aside h1{
+    font-size: 4.em;
+    margin-top: 10px;
+
+}
+content .article1 aside p{
+    text-align: left;
+    margin-top: 30px;
+
 }
 
 /*-----------Article2*/
+.article2 hr{
+    background-color: #270f07;
+    width: 1400px;
+    height: 2px;
+    position: absolute;
+    left: 95px;
+}
+
+
 
 .artista-info{
     width: 800px;
@@ -152,7 +169,7 @@ content .article1 aside {
     top:  30px;
     left: 10px;
     width: 700px;
-    height: 600px;
+    height: 500px;
     padding: 20px 0px 20px 50px;
     background-color: #e0dbcb; /*Color de fondo y con el valor 0.7 determinamos la opacidad.*/
     box-shadow: 3px 0px 8px rgb(0,0,0,0.4);
@@ -160,7 +177,7 @@ content .article1 aside {
 }
 
 form{
-    margin-top:90px;
+    margin-top:50px;
     flex-direction: column; /*los elementos del formulario se apilarán verticalmente*/
     height: 100%;
     display: flex; /*le damos flexibilidad al contenedor */
@@ -168,9 +185,9 @@ form{
 
 #titulo-form{
     position: absolute;
-    left: 5px;
+    left: 0px;
     top: 16px;
-    margin-left: calc(70% - 25px);/*Con calc() establecemos el margen izquierdo del elemento como el 70% del ancho del contenedor padre menos 25 píxeles. */
+    margin-left: calc(70% - 200px);/*Con calc() establecemos el margen izquierdo del elemento como el 70% del ancho del contenedor padre menos 25 píxeles. */
     align-items: right;
     background-color: rgb(255, 255, 255,0.7);
     font-family: "Aguafina Script", cursive;/*Añadimos la fuente importada.*/
@@ -179,6 +196,7 @@ form{
     letter-spacing: 5px; /*Para darle tamaño entre letras*/
     text-shadow: 0px 0px 2px #777;
     padding: 0px 10px 0px 10px;
+    z-index: 1;
 }
 
 .form-container  input,textarea {
