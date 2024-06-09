@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Conrnerstone" ;
-    src: url(../fuentes/Cornerstone.ttf); 
+    src: url(../fuentes/Cornerstone.ttf);
 }
 
 body{
@@ -8,7 +8,6 @@ body{
     padding: 0px;
 
 }
-
 
 /*Todo lo relacionado con el header*/
 header{
@@ -19,12 +18,12 @@ header{
 }
 
 header .elementos{
-    
+
     height: 13vh;
 }
 
 header h1{
-    margin:20px 0px 0px 0px ;
+    /* margin:1vh 0vh 0vh 0vh ; */
     font-family: "Conrnerstone" ;
     font-size: 58px;
     /* color: #cc527a; */
@@ -32,31 +31,53 @@ header h1{
 }
 
 header  img{
-    width: 13vh; 
+    width: 13vh;
     height: 13vh;
     margin: 0px 200px 0px 50px;
 }
 
 /* el nav de header */
 
+.btn.btn-outline-purple {
+    color: #fff ; /* Color del texto */
+    background-color: #8a2be2 ; /* Color de fondo morado */
+    border-color: #8a2be2 ; /* Color del borde morado */
+}
+
+.offcanvas-body ul.navbar-nav > li:not(.dropdown) {
+    margin-bottom: 10px; /* Ajusta la distancia entre cada elemento <li> principal */
+    justify-content: left;
+}
 
 
-/*Todo lo relacionado con el nav*/
+/*---------------------------------------------------------------Todo lo relacionado con el nav---------------------------------*/
 nav{
     height: 10vh;
     border-bottom: 1px  solid #270f07;
     border-top:1px solid  #270f07;
     align-items: center;
 }
-.nav-container{
+.nav-container{ /*Antes de llegar a medir xs */
     height: 9.9vh;
     border-bottom: 1px  solid #270f07;
     border-top:1px solid  #270f07;
     align-items: center;
 }
+
+.main-nav{
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+
 .navbar-brand{
-    margin-left: 5vw;
-    font-family: "Conrnerstone" ; 
+    margin-left: 10vw;
+    font-family: "Conrnerstone" ;
+    padding-left: 0px;
+}
+.navbar-collapse{
+    width: 10vw;
 }
 nav .navbar-nav{
     align-content: center;
@@ -64,8 +85,8 @@ nav .navbar-nav{
 }
 .navbar-nav .nav-item {
     margin-right: 0px; /* Espacio entre los items */
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 5vw;
+    padding-right: 10vw;
   }
 
 .navbar-nav .nav-link {
@@ -79,31 +100,124 @@ nav .navbar-nav{
 }
 
 .navbar-nav .nav-link {
-    font-family: "Conrnerstone" ; 
+    font-family: "Conrnerstone" ;
     color: black;
 }
 .navbar-nav .dropdown-menu .dropdown-item {
-    font-family: "Conrnerstone" ; 
+    font-family: "Conrnerstone" ;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #f7e4c9;
+}
+ /* Le quitamos el padding para que no queden bordes en blanco*/
+.dropdown-menu{
+    padding: 1px 0px 1px 0px ;
+    border-radius: 5px;
+    background-color: #785cac ;
+}
+
+/* Estilos para los elementos de los submenús */
+.navbar-nav .dropdown-menu .dropdown-item  {
+    background-color: #785cac;
+    height: 10%;
+   
+}
+
+/* Estilo alternativo para los elementos pares de los submenús */
+.navbar-nav .dropdown-menu .dropdown-item:nth-child(even) {
+    background-color: #9264e1;
+}
+
+/* Estilos al pasar el ratón sobre los elementos de los submenús */
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #9b84c5;
 }
 
 
-/*Todo lo relacionado con el content*/
+/*Butoon */
+.navbar-toggler{
+    margin-top: 7px;
+    margin-right: 25px;
+}
+
+/*Desplegable dentro del butoon */
+
+.navbar-toggler {
+    /* background-color: #785cac; Color de fondo deseado */
+    border-color: #785cac; /* Color del borde, si lo deseas */
+}
+
+/* Apuntar a las listas desplegables que aparecen después de hacer clic en el botón */
+ .navbar-toggler:focus+ .collapse.navbar-collapse .navbar-nav {
+    background-color: rgba(200, 200, 200, 0.5); /* Fondo gris claro con transparencia */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra difuminada */
+}
+
+.navbar-toggler:focus + .collapse.navbar-collapse .navbar-nav li:hover {
+    background-color: rgba(150, 150, 150, 0.5); /* Color de fondo más oscuro */
+}
+/*-----------------------------------------------Todo lo relacionado con el content--------------------------------------*/
+
+
 
 content{
     border: 1px solid  black;
-    height: 70vh;
+    /*height: 120vh;*/
     align-items: center;
 }
 
 content .elementos{
     border: 1px solid  black;
-    height: 30vh;
+    /* height: 30vh; */
     align-items: center;
+}
+
+.article{
+    height: 100%;
+}
+
+
+.article img{
+    
+    margin-top: 2vh;
+    border: 2px solid #270f07;
+    border-radius: 2vh;
+
+}
+
+/* Responsive Image Sizing */
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) { /* md */
+    .responsive-img {
+        width: 75%;
+    }
+}
+
+@media (min-width: 992px) { /* lg */
+    .responsive-img {
+        width: 50%;
+    }
 }
 
 
 
-/*Todo lo relacionado con el footer*/
+h2{
+    font-family: "Conrnerstone" ;
+}
+
+p{
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/*---------------------------------------------------------------------Todo lo relacionado con el footer--------------------------------------------------------*/
 footer{
     height: 11vh;
     border-top: solid black 1px;
@@ -113,11 +227,11 @@ footer{
 }
 
 footer p{
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     color: #e7b82f;
     margin-bottom: 0px;
-    
-    
+
+
 }
 
 #insta{
