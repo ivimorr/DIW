@@ -1,0 +1,26 @@
+.display-border{
+    border: solid black 1px;
+}
+
+.first-row{
+    height: 10vh;
+}
+
+.second-row{
+    height: 25vh;
+}
+
+.second-row .left-column{
+    width: 25vw;
+    background-color: rgb(100, 90, 100);
+}
+
+
+.third-row{
+    height: 5vh;
+    background-color: red;
+}
+
+.bg-blue{
+    background-color: blue;
+}

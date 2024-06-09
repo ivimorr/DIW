@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Conrnerstone" ;
+    src: url(../fuentes/Cornerstone.ttf); 
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+/*Todo lo relacionado con el header*/
+header{
+    border: 1px solid  black;
+    height: 13vh;
+    align-items: center;
+    background-color: #363636;
+}
+
+header .elementos{
+    
+    height: 13vh;
+}
+
+header h1{
+    margin:20px 0px 0px 0px ;
+    font-family: "Conrnerstone" ;
+    font-size: 58px;
+    /* color: #cc527a; */
+    color: #e7b82f;
+}
+
+header  img{
+    width: 13vh; 
+    height: 13vh;
+    margin: 0px 200px 0px 50px;
+}
+
+/* el nav de header */
+
+
+
+/*Todo lo relacionado con el nav*/
+nav{
+    height: 10vh;
+    border-bottom: 1px  solid #270f07;
+    border-top:1px solid  #270f07;
+    align-items: center;
+}
+.nav-container{
+    height: 9.9vh;
+    border-bottom: 1px  solid #270f07;
+    border-top:1px solid  #270f07;
+    align-items: center;
+}
+.navbar-brand{
+    margin-left: 5vw;
+    font-family: "Conrnerstone" ; 
+}
+nav .navbar-nav{
+    align-content: center;
+    margin: auto;
+}
+.navbar-nav .nav-item {
+    margin-right: 0px; /* Espacio entre los items */
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+.navbar-nav .nav-link {
+    padding: 0px 0px; /* Espacio alrededor del texto del enlace */
+}
+
+.collapse.navbar-collapse.col-6 .navbar-nav .nav-item:last-child {
+    /* Estilos CSS para el último li y quitarles margenes internos e externos en la su parte derecha*/
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.navbar-nav .nav-link {
+    font-family: "Conrnerstone" ; 
+    color: black;
+}
+.navbar-nav .dropdown-menu .dropdown-item {
+    font-family: "Conrnerstone" ; 
+}
+
+
+/*Todo lo relacionado con el content*/
+
+content{
+    border: 1px solid  black;
+    height: 70vh;
+    align-items: center;
+}
+
+content .elementos{
+    border: 1px solid  black;
+    height: 30vh;
+    align-items: center;
+}
+
+
+
+/*Todo lo relacionado con el footer*/
+footer{
+    height: 11vh;
+    border-top: solid black 1px;
+    justify-content: center;
+    background-color: #363636;
+    position: relative;
+}
+
+footer p{
+    margin-top: 10px;
+    color: #e7b82f;
+    margin-bottom: 0px;
+    
+    
+}
+
+#insta{
+    width: 40px;
+    height: 40px;
+    border: solid 4px #785cac;
+    border-radius: 40px;
+    background-color: #785cac;
+    background-image: url("../img/instagram-white-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* margin: 40px; */
+    /* position: absolute;
+    left: 740px;
+    top: 35px;
+    list-style: none; */
+
+}
+
+#tiktok{
+    width: 40px;
+    height: 40px;
+    border: solid 4px #785cac;
+    border-radius: 40px;
+    background-color: #785cac;
+    background-image: url("../img/Tik-Tok-70.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 500;
+    /* margin-top: 40px; */
+    /* position: absolute;
+    left: 810px;
+    top: 35px;
+    list-style: none; */
+}
