@@ -161,47 +161,6 @@ nav .navbar-nav{
 
 
 
-.content{
-    border: 1px solid  black;
-    /*height: 120vh;*/
-    align-items: center;
-    padding: 5vh;
-}
-
-.content img[src*="Yellow and Grey sweatshirts.png"]{
-    height: 60vh;
-    /* margin-bottom: 10px; */
-}
-
-.content img[src*="Converse Picture.png"]{
-    height: 60vh;
-    /* margin-bottom: 55px; */
-}
-
-.content img[src*="Amour Liah Jacket.png"]{
-    height: 60vh;
-    /* margin-bottom: 10px; */
-
-}
-
-
-
-.content .card {
-    border-radius: 8px;
-    border: 2px solid #270f07;
-} 
-
-
-
-h2{
-    font-family: "Conrnerstone" ;
-}
-
-p{
-    font-size: 1.2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 
 
 /*---------------------------------------------------------------------Todo lo relacionado con el footer--------------------------------------------------------*/

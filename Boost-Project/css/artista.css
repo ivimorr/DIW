@@ -82,6 +82,8 @@ nav{
 nav .navbar-nav{
     align-content: center;
     margin: auto;
+    position: relative;
+    z-index: 1000; /* Un valor alto para asegurarse de que el navbar esté por encima del contenido */
 }
 .navbar-nav .nav-item {
     margin-right: 0px; /* Espacio entre los items */
@@ -159,48 +161,30 @@ nav .navbar-nav{
 }
 /*-----------------------------------------------Todo lo relacionado con el content--------------------------------------*/
 
-
-
 .content{
-    border: 1px solid  black;
-    /*height: 120vh;*/
-    align-items: center;
-    padding: 5vh;
+    margin: 0px;
+    padding: 0px;
+    background-color:#f7e4c9;
+    padding-bottom: 1.6vh;
+}
+.card.card-1 {
+    background-color: #e9e7df; /*Color de fondo y con el valor 0.7 determinamos la opacidad.*/
+    box-shadow: inset 3px 0px 8px rgba(0, 0, 0, 0.4);
 }
 
-.content img[src*="Yellow and Grey sweatshirts.png"]{
-    height: 60vh;
-    /* margin-bottom: 10px; */
+.card.card-2 {
+    margin-bottom: 0 !important; /* Anula el margen inferior */
+    background-color: #e9e7df; /*Color de fondo y con el valor 0.7 determinamos la opacidad.*/
+    box-shadow: inset 3px 0px 8px rgba(0, 0, 0, 0.4);
 }
 
-.content img[src*="Converse Picture.png"]{
-    height: 60vh;
-    /* margin-bottom: 55px; */
-}
-
-.content img[src*="Amour Liah Jacket.png"]{
-    height: 60vh;
-    /* margin-bottom: 10px; */
-
+.card-2{
+margin-bottom:0px ;
 }
 
 
 
-.content .card {
-    border-radius: 8px;
-    border: 2px solid #270f07;
-} 
 
-
-
-h2{
-    font-family: "Conrnerstone" ;
-}
-
-p{
-    font-size: 1.2em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
 
 

@@ -37,28 +37,28 @@
                   <div class="offcanvas-body" style="background-color: #e4dacc;">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Designs</a>
+                        <a class="nav-link" href="diseño.html">Designs</a>
                       </li>
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Clothes
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">T-shirts</a></li>
-                          <li><a class="dropdown-item" href="#">Shoes</a></li>
-                          <li><a class="dropdown-item" href="#">Accessories</a></li>
+                          <li><a class="dropdown-item" href="sudaderas.html">T-shirts</a></li>
+                          <li><a class="dropdown-item" href="zapatillas.html">Shoes</a></li>
+                          <li><a class="dropdown-item" href="accesorios.html">Accessories</a></li>
                         </ul>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="aritista.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Artist
                         </a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">About</a></li>
-                          <li><a class="dropdown-item" href="#">Contact</a></li>
+                          <li><a class="dropdown-item" href="#about">Contact</a></li>
                         </ul>
                       </li>
                     </ul>
@@ -76,30 +76,30 @@
       
        <!--Todo lo relacionado con el nav-->
       <!-- nav con sub menu  -->
-      <nav class="row navbar navbar-expand-lg bg-body-tertiary d-sm-flex d-none main-nav">
+    <nav class="row navbar navbar-expand-lg bg-body-tertiary d-sm-flex d-none main-nav">
     <!-- Contenido del navbar -->
     <div class=" nav-container container-fluid ; " style="background-color:#a8a7a7;">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse col-10" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Designs</a>
+                    <a class="nav-link" href="diseño.html" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" onclick="redirectTo('diseño.html')">Designs</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clothes</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">T-Shirts</a></li>
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Shoes</a></li>
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Accessories</a></li>
+                        <li><a class="dropdown-item" href="" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" onclick="redirectTo('sudaderas.html')">T-Shirts</a></li>
+                        <li><a class="dropdown-item" href="" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" onclick="redirectTo('zapatillas.html')">Shoes</a></li>
+                        <li><a class="dropdown-item" href="" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" onclick="redirectTo('accesorios.html')">Accessories</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Artist</a>
+                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" >Artist</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">About</a></li>
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" onclick="redirectTo('aritista.html')">About</a></li>
                         <li><a class="dropdown-item" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">Contact</a></li>
                     </ul>
                 </li>
@@ -109,7 +109,7 @@
 </nav>
 
        <!--Todo lo relacionado con el content-->
-      <content class="row ">
+      <!-- <content class="row ">
         <div class="d-flex flex-column justify-content-around gap-1 col elementos h-75 article">
           <div class="d-flex flex-column gap-1 ">
             <img class="responsive-img" src="img/Yellow and Grey sweatshirts.png" alt="" >
@@ -131,7 +131,38 @@
             <p>Complete your look with our unique accessories decorated with graffiti art. From jackets and caps to backpacks and more, each accessory is designed to add a touch of creativity and expression to your daily style.</p>
           </div>
         </div>
-      </content>
+      </content> -->
+      <div class="content">
+        <div class="row">
+            <div class="col-md-4 ">
+                <div class="card card-1 mb-3" style="width: 100%;">
+                    <img src="img/Yellow and Grey sweatshirts.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2>Sweaters and t-shirts </h2>
+                        <p>Discover our exclusive collection of sweaters and t-shirts with unique graffiti designs. Perfect for those looking to stand out with style and personality, these garments combine comfort and urban art in every detail.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-2 mb-3" style="width: 100%;">
+                    <img src="img/Converse Picture.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2>Shoes</h2>
+                      <p style="padding-bottom: 3.5vh;">Add a touch of originality to every step with our custom graffiti shoes. From classic sneakers to sports footwear, our designs transform your shoes into authentic works of art that won't go unnoticed.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-3 mb-3" style="width: 100%;">
+                    <img src="img/Amour Liah Jacket.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h2>Accessories</h2>
+                      <p>Complete your look with our unique accessories decorated with graffiti art. From jackets and caps to backpacks and more, each accessory is designed to add a touch of creativity and expression to your daily style.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
       <!--Todo lo relacionado con el footer-->
 
       <footer class="row ">
@@ -144,5 +175,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
