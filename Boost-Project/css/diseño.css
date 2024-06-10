@@ -158,17 +158,34 @@ nav .navbar-nav{
     background-color: rgba(150, 150, 150, 0.5); /* Color de fondo más oscuro */
 }
 /*-----------------------------------------------Todo lo relacionado con el content--------------------------------------*/
+
+.content{
+    
+    margin: 0px;
+    padding: 0px;
+    background-color:#dbd3bd;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+
+
 /* parte-1 */
 .card-1{
-    margin-left:2vw;
-    margin-top: 6vh;
+   
     border: none; /* Eliminar los bordes */
     box-shadow: none; /* Opcional: eliminar la sombra */
+    background-color:#dbd3bd;
 }
 
 .carousel-indicators{
     margin-bottom: 0.1vh; /*par aque la barra de video no solape los indicadores*/
 }
+
+
+.carousel-item video {
+    border:2px solid  #270f07 ; /* Cambia el color y el grosor según tus necesidades */
+    border-radius: 8px; /* Añade bordes redondeados si lo deseas */
+  }
 
 .card-body p{
     text-align: left;
@@ -178,10 +195,12 @@ nav .navbar-nav{
     font-size: 30px;
 }
 
+
+
 /*parte-2*/
 .parte-2{
    justify-content: center;
-  
+
 }
 
 .card-2{
@@ -192,9 +211,10 @@ nav .navbar-nav{
 }
 .card-2 .card-body{
     background-color: #e0dbcb; /*Color de fondo y con el valor 0.7 determinamos la opacidad.*/
-    /* box-shadow: 3px 0px 8px rgb(0,0,0,0.4); */
-    /* border: 1px solid #ddd;
+    box-shadow: 3px 0px 8px rgb(0,0,0,0.4); 
+    border: 1px solid #ddd;
     border-radius: 5px;
+    /*border-radius: 5px;
     position: absolute;
     left: 280px;
     bottom: 20px; */
@@ -212,7 +232,7 @@ nav .navbar-nav{
     font-style:oblique;
     text-align: center;
      width: fit-content;
-    
+
 
 }
 
@@ -244,11 +264,13 @@ nav .navbar-nav{
 /* parte-3l */
 
 .cards-container{
-    margin-right: 5vw;
+    
+    padding: 0px;
+    justify-content: right;
 }
 
 .parte-3 .card{
-    width: 80%; /* Ajusta el valor según tus necesidades */
+    width: 89%; /* Ajusta el valor según tus necesidades */
     height: auto;
     border: solid  #270f07 2px;
 }
