@@ -82,6 +82,8 @@ nav{
 nav .navbar-nav{
     align-content: center;
     margin: auto;
+    position: relative;
+    z-index: 1000; /* Un valor alto para asegurarse de que el navbar esté por encima del contenido */
 }
 .navbar-nav .nav-item {
     margin-right: 0px; /* Espacio entre los items */

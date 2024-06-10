@@ -121,7 +121,7 @@ nav .navbar-nav{
 .navbar-nav .dropdown-menu .dropdown-item  {
     background-color: #785cac;
     height: 10%;
-   
+
 }
 
 /* Estilo alternativo para los elementos pares de los submenús */
@@ -158,9 +158,100 @@ nav .navbar-nav{
     background-color: rgba(150, 150, 150, 0.5); /* Color de fondo más oscuro */
 }
 /*-----------------------------------------------Todo lo relacionado con el content--------------------------------------*/
+/* parte-1 */
+.card-1{
+    margin-left:2vw;
+    margin-top: 6vh;
+    border: none; /* Eliminar los bordes */
+    box-shadow: none; /* Opcional: eliminar la sombra */
+}
+
+.carousel-indicators{
+    margin-bottom: 0.1vh; /*par aque la barra de video no solape los indicadores*/
+}
+
+.card-body p{
+    text-align: left;
+}
+.card-body h3{
+    font-family: "Conrnerstone" ;
+    font-size: 30px;
+}
+
+/*parte-2*/
+.parte-2{
+   justify-content: center;
+  
+}
+
+.card-2{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 10vw;
+    padding: 0px;
+}
+.card-2 .card-body{
+    background-color: #e0dbcb; /*Color de fondo y con el valor 0.7 determinamos la opacidad.*/
+    /* box-shadow: 3px 0px 8px rgb(0,0,0,0.4); */
+    /* border: 1px solid #ddd;
+    border-radius: 5px;
+    position: absolute;
+    left: 280px;
+    bottom: 20px; */
+
+}
+
+.card-2 .card-body p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:oblique;
+    font-size:  1.2em;
+}
+.card-2.card-body ul {
+    margin: 0 auto; /* Establece un margen automático en la parte superior e inferior y calcula automáticamente los márgenes laterales para centrar el elemento */
+    padding-left: 2vw; /* Agrega un relleno en el lado izquierdo para separar el texto del borde de la lista */
+    font-style:oblique;
+    text-align: center;
+     width: fit-content;
+    
+
+}
+
+.card-2 .card-body li{
+    list-style-type:none;
+    padding-bottom: 3px;
+    font-size:  1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:oblique;
+    text-align: left;
+    position: relative;
+    padding-left: 2vw;
+
+}
+
+.card-2 .card-body ul li::before {
+    content: '- ';
+    position:absolute;
+    left: 0px;
+}
 
 
+.content .card-2 .card-body h4 {
+    font-size: 25px;
+    margin: 5px 0px 20px 0px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+/* parte-3l */
+
+.cards-container{
+    margin-right: 5vw;
+}
+
+.parte-3 .card{
+    width: 80%; /* Ajusta el valor según tus necesidades */
+    height: auto;
+    border: solid  #270f07 2px;
+}
 
 
 /*---------------------------------------------------------------------Todo lo relacionado con el footer--------------------------------------------------------*/
