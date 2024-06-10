@@ -67,6 +67,8 @@ nav{
 .main-nav{
     padding-top: 0px;
     padding-bottom: 0px;
+    position: relative;
+    z-index: 1000; /* Un valor alto para asegurarse de que el navbar esté por encima del contenido */
 
 }
 
@@ -159,7 +161,67 @@ nav .navbar-nav{
 }
 /*-----------------------------------------------Todo lo relacionado con el content--------------------------------------*/
 
+.content{
 
+    margin: 0px;
+    padding: 0px;
+    background-color:#dbd3bd;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+}
+
+
+/* parte-1 */
+.card-1{
+
+    border: none; /* Eliminar los bordes */
+    box-shadow: none; /* Opcional: eliminar la sombra */
+    background-color:#dbd3bd;
+}
+
+.carousel-indicators{
+    margin-bottom: 0.1vh; /*par aque la barra de video no solape los indicadores*/
+}
+
+
+.carousel-item video {
+    border:2px solid  #270f07 ; /* Cambia el color y el grosor según tus necesidades */
+    border-radius: 8px; /* Añade bordes redondeados si lo deseas */
+  }
+
+.card-body p{
+    text-align: left;
+}
+.card-body h3{
+    font-family: "Conrnerstone" ;
+    font-size: 30px;
+}
+
+.card-body p{
+    text-align: left;
+    margin: 6.5vh;
+}
+
+.carousel h3{
+    font-family: "Conrnerstone" ;
+    font-size: 30px;
+    margin-left: 3vw;
+    margin-bottom: 3vw;
+}
+
+
+/*parte-2*/
+
+.parte-2{
+    padding-left: 7.9vw;
+}
+
+
+.parte-2 .card{
+    width: 89%; /* Ajusta el valor según tus necesidades */
+    height: auto;
+    border: solid  #270f07 2px;
+}
 
 
 

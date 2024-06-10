@@ -164,10 +164,11 @@ nav .navbar-nav{
 
 
 .content{
-    border: 1px solid  black;
+    border: 1px solid  #dbd3bd;
     /*height: 120vh;*/
     align-items: center;
     padding: 5vh;
+    background-color:#dbd3bd;
 }
 
 .content img[src*="Yellow and Grey sweatshirts.png"]{
@@ -191,8 +192,9 @@ nav .navbar-nav{
 .content .card {
     border-radius: 8px;
     border: 2px solid #270f07;
+    background-color: #f1f0ea;
 } 
-
+    
 
 
 h2{
